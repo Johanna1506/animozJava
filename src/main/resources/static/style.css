@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;900&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7efed;
+}
+svg {
+    width: 36px;
+    height: 36px;
+    fill: white;
+}
+.svgHome {
+    width: 400px;
+    height: 400px;
+}
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    background-color: coral;
+    padding: 12px;
+    margin: 0;
+}
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 12px;
+}
+h1 {
+    text-align: center;
+    color: #e2673c;
+}
+
+
+.form {
+    width: 40%;
+    background-color: #f7d1c3;
+    margin: 12px auto;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.form input, select, label, option{
+    width: 50%;
+    margin: 6px auto;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+select {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    padding: 0 1em 0 0;
+    margin: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+}
+:root {
+    --select-border: coral;
+    --select-focus: blue;
+    --select-arrow: var(--select-border);
+}
+select::-ms-expand {
+    display: none;
+}
+.select {
+    width: 50%;
+    margin: 6px auto;
+    min-width: 15ch;
+    max-width: 30ch;
+    border: 1px solid var(--select-border);
+    border-radius: 0.25em;
+    padding: 0.25em 0.5em;
+    font-size: 1.25rem;
+    cursor: pointer;
+    line-height: 1.1;
+    background-color: #fff;
+    background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+    display: grid;
+    grid-template-areas: "select";
+    align-items: center;
+}
+.select::after {
+    content: "";
+    width: 0.8em;
+    height: 0.5em;
+    background-color: var(--select-arrow);
+    clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+    justify-self: end;
+}
+select,
+.select:after {
+    grid-area: select;
+}
+input, option {
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px coral solid;
+}
+
+input[type=submit] {
+    background-color: coral;
+    padding: 18px;
+    color: white;
+    font-weight: bold;
+}
+
+table {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+tr:nth-of-type(odd){
+    background-color: white;
+}
+tr:nth-of-type(even){
+    background-color: #f7d1c3;
+}
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
